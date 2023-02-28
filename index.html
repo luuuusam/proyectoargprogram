@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>CV LS</title>
+</head>
+<body>
+    <!--Inicio-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li> <a href="inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a> </li>
+                            <li> <a href="sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li> <a href="educacion" onclick="seleccionar(this)">EDUCACION</a></li>
+                            <li> <a href="habilidades" onclick="seleccionar(this)">HABILIDADES</a></li>
+                            <li> <a href="contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!--Iconos del menu-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-sharp fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </header>   
+            <div class="presentacion">
+                <p class="bienvenida">¡Bienvenidos!</p>
+                <h2>Soy <span>Luciana Salvia</span>, Web Developer.</h2>
+                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nam a beatae natus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nam a beatae natus.</p>
+                <a href="portfolio">Ver CV</a>
+                </div>
+
+
+
+        </div>
+    </section>
+    
+    <!--Sobre Mi-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="https://img.freepik.com/fotos-premium/chica-atractiva-cuaderno-sobre-fondo-amarillo_185193-68854.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">SOBRE MI</p>
+            <h2>Hola, soy <span>Luciana</span></h2>
+            <h3>Web Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, fugiat fugit quibusdam autem quisquam, veniam necessitatibus vel provident ipsum obcaecati harum dolor dolores dicta modi blanditiis error. Voluptatibus, debitis explicabo?</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium natus hic iste voluptatibus.</p>
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+
+    <!--Educacion-->
+    <section id="educacion">
+        <h3 class="titulo-seccion">EDUCACION</h3>
+        <div class="fila">
+            <div class="educacion">
+                <span class="icono"><i class="fa-solid fa-book"></i></span>
+                <h4>Analista Programador</h4>
+                <hr>
+                <ul class="educacion-tag">
+                    <li>Año xxxx</li>
+                </ul>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="educacion">
+                <span class="icono"><i class="fa-solid fa-book"></i></span>
+                <h4>Ingles</h4>
+                <hr>
+                <ul class="educacion-tag">
+                    <li>Año xxxx</li>
+                </ul>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="educacion">
+                <span class="icono"><i class="fa-solid fa-book"></i></span>
+                <h4>Diseño Web</h4>
+                <hr>
+                <ul class="educacion-tag">
+                    <li>Año xxxx</li>
+                </ul>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="educacion">
+                <span class="icono"><i class="fa-solid fa-book"></i></span>
+                <h4>Introducción a Frontend</h4>
+                <hr>
+                <ul class="educacion-tag">
+                    <li>Año xxxx</li>
+                </ul>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="educacion">
+                <span class="icono"><i class="fa-solid fa-book"></i></span>
+                <h4>Diseño UX UI</h4>
+                <hr>
+                <ul class="educacion-tag">
+                    <li>Año xxxx</li>
+                </ul>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="educacion">
+                <span class="icono"><i class="fa-solid fa-book"></i></span>
+                <h4>Desarrollo Web</h4>
+                <hr>
+                <ul class="educacion-tag">
+                    <li>Año xxxx</li>
+                </ul>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Habilidades-->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+    
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Html & Css</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+    
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Javascript</p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso2"></div>
+            </div>
+        </div>
+    
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Bootstrap</p>
+                <span class="porcentaje">60%</span>
+            </div>
+            <div class="barra">
+                <div id="boots" class="barra-progreso3"></div>
+            </div>
+        </div>
+    
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Figma</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="figma" class="barra-progreso4"></div>
+            </div>
+        </div>
+    
+    </div>
+
+    <!--Contacto-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre y Apellido" class="input-mitad">
+                    <input type="text" placeholder="Correo Electronico" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Asunto..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
